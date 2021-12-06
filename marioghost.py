@@ -8,6 +8,8 @@ Tello detects a face and flies towards it when face is turned away. Tello stops 
 frameWidth = 320
 frameHeight = 180
 
+
+
 me = Tello()
 me.connect()
 print(me.get_battery())
@@ -27,4 +29,5 @@ while(True):
     if cv2.waitKey(1) & 0xFF == ord('q'):
         me.land()
         break
+    
     
