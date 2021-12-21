@@ -9,8 +9,8 @@ Tello detects a face and tracks it at a fixed distance
 frameWidth = 320
 frameHeight = 180
 
-path = os.path.abspath(__file__)
-path = path.removesuffix('createtestdata.py') + "imgs"
+path = os.path.abspath(__file__).removesuffix('createtestdata.py') + "imgs"
+
 counter = 0
 print(path)
 me = Tello()
